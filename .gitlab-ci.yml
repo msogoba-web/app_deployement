@@ -25,5 +25,4 @@ deploy:
     - docker stop mini-devops || true
     - docker rm mini-devops || true
     - docker run -d -p 5000:5000 --name mini-devops $IMAGE_NAME:$CI_COMMIT_SHORT_SHA
-  when: manual
 
